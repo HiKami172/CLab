@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
+typedef unsigned char bool;
+
 int main()
 {
 	unsigned int n;
 	printf("Enter natural number: ");
-	scanf("%u", &n);
+	scanf_s("%u", &n);
 	int i = 2;
 	int Numb = n % 10;
 	bool Decr = 1;
