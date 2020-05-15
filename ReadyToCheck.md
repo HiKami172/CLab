@@ -1,9 +1,9 @@
 # CLab
-For C labs
-1)Ready
-2)Ready
-3)
-4)
-5)
-6)
-7)
+For C labs\n
+1)Ready\n
+2)Ready\n
+3)\n
+4)\n
+5)\n
+6)\n
+7)\n
