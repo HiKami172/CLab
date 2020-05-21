@@ -7,15 +7,13 @@ edit: $(TARGET)
 	
 Source.o: Source.c
 				$(CC) -c Source.c
-BinTree.o: BinTree.c BinTree.h
-				$(CC) -c BinTree.c
-Stack.o: Stack.c Stack.h
-				$(CC) -c Stack.c
-a.out: Source.c BinTree.c Stack.c BinTree.h Stack.h
-	gcc -g Source.c BinTree.c
+list.o: list.c list.h
+				$(CC) -c list.c
+a.out: Source.c list.c list.h
+	gcc -g Source.c list.c
 
-$(TARGET): Source.o BinTree.o Stack.o
-				$(CC) -o $(TARGET) Source.o BinTree.o Stack.o
+$(TARGET): Source.o list.o
+				$(CC) -o $(TARGET) Source.o list.o
 valgrind: a.out
 	valgrind -q ./a.out	
 	

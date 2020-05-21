@@ -54,7 +54,10 @@ void push(char* str, char ch, int* size, int i)
 	else
 	{
 		if ((str = (char*)realloc(str, *size + 32)) == NULL)
+		{
 			printf("Unable to reallocate memory for character buffer\n");
+			return;
+		}
 		*size += 32;
 		str[i] = ch;
 	}
