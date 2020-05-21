@@ -1,4 +1,5 @@
 #include "BinTree.h"
+#include <stdio.h>
 
 Node* getFreeNode(T value, Node *parent) {
 	Node* tmp = (Node*)malloc(sizeof(Node));

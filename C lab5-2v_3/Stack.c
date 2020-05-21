@@ -1,4 +1,5 @@
 #include "Stack.h"
+#include <stdio.h>
 
 void push(Node_t **head, T i, T d)
 {
